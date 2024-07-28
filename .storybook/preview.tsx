@@ -1,4 +1,6 @@
 import type { Preview } from "@storybook/react";
+import React from "react";
+import Center from '../src/components/Center/Center'
 
 const preview: Preview = {
   parameters: {
@@ -9,6 +11,13 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <Center>
+        <Story />
+      </Center>
+    ),
+  ],
 };
 
 export default preview;

@@ -1,4 +1,3 @@
-import { Children } from "react";
 import Button from "./Button";
 
 export default {
@@ -7,7 +6,8 @@ export default {
     args: {
         children: 'Default Button',
         variant: 'primary'
-    }
+    },
+    decorators: [story => <div style={{padding: "5px", border: "1px solid black"}}>{story()}</div>]
 }
 
 export const Primary = () => <Button variant="primary">Primary</Button>
