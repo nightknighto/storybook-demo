@@ -1,0 +1,25 @@
+/* Input class */
+.input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Small input class */
+.input.sm {
+    padding: 6px;
+    font-size: 12px;
+}
+
+/* Medium input class */
+.input.md {
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Large input class */
+.input.lg {
+    padding: 10px;
+    font-size: 16px;
+}
