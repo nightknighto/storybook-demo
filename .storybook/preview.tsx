@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react";
 import React from "react";
 import Center from '../src/components/Center/Center'
+import { CSSReset, theme, ThemeProvider } from "@chakra-ui/core";
 
 const preview: Preview = {
   parameters: {
@@ -17,6 +18,12 @@ const preview: Preview = {
         <Story />
       </Center>
     ),
+    (Story) => (
+      <ThemeProvider theme={theme}>
+        <CSSReset />
+        <Story />
+      </ThemeProvider>
+    )
   ],
 };
 
