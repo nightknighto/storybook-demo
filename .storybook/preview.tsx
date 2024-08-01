@@ -24,7 +24,7 @@ const preview: Preview = {
         <Story />
       </ThemeProvider>
     )
-  ],
+  ]
 };
 
 export default preview;
